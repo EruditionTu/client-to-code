@@ -1,0 +1,23 @@
+{
+  "name": "@client-to-code/react-vite-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@client-to-code/react-client": "workspace:*",
+    "react": "^18.2.0",
+    "react-dev-utils": "^12.0.1",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@client-to-code/vite-plugin-react": "workspace:*",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0"
+  }
+}

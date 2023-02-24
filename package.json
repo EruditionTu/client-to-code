@@ -1,0 +1,28 @@
+{
+  "name": "client-to-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "Berwin",
+  "license": "ISC",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.35.2",
+    "@changesets/cli": "^2.26.0",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@types/node": "^18.14.0",
+    "eslint": "^8.34.0",
+    "lint-staged": "^13.1.2",
+    "react-dev-utils": "^12.0.1",
+    "rollup": "^3.17.2",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.3",
+    "webpack": "^5.75.0",
+    "webpack-bundle-analyzer": "^4.8.0"
+  }
+}

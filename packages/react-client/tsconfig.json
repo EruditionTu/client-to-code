@@ -1,0 +1,10 @@
+{
+    "extends":"../../tsconfig.json",
+    "include": ["./src"],
+    "exclude": ["./webpack.config.js"],
+    "compilerOptions": {
+        "outDir": "./lib/types",
+        "target": "ESNext",
+        "jsx":"react-jsx"
+    }
+}

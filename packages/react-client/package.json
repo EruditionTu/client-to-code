@@ -1,0 +1,33 @@
+{
+  "name": "@client-to-code/react-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/dist/index.esm.js",
+  "types": "./lib/types/index.d.ts",
+  "scripts": {
+    "build": "webpack&&tsc --emitDeclarationOnly "
+  },
+  "keywords": [],
+  "author": "Berwin",
+  "license": "ISC",
+  "files": [],
+  "exports":{
+    ".":{
+      "import":"./lib/dist/index.esm.js",
+      "require":"./lib/dist/index.cjs.js",
+      "types":"./lib/types/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-reconciler": "^0.28.2",
+    "babel-loader": "^9.1.2",
+    "ts-loader": "^9.4.2",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "hotkeys-js": "^3.10.1",
+    "querystring": "^0.2.1",
+    "react": "^18.2.0"
+  }
+}

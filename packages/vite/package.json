@@ -1,0 +1,24 @@
+{
+  "name": "@client-to-code/vite-plugin-react",
+  "version": "1.0.0",
+  "description": "Development environment Click on the component to jump to the corresponding file",
+  "main": "./lib/index.js",
+  "type": "module",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build":"tsc",
+    "dev":"tsc -w"
+  },
+  "exports":{
+    ".":"./lib/index.js",
+    "./type":"./lib/index.d.ts"
+  },
+  "files": [],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@client-to-code/middleware": "workspace:*"
+  }
+}

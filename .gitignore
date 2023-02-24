@@ -1,0 +1,8 @@
+/node_modules/
+/.idea/
+/packages/*/node_modules/
+/packages/*/lib/
+# babel插件
+/packages/babel-jsx-codeinfo-transformer/
+# webpack插件
+/packages/webpack-plugin/

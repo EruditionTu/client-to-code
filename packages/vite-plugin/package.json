@@ -1,7 +1,7 @@
 {
   "name": "@client-to-code/vite-plugin-react",
   "version": "1.0.0",
-  "description": "Development environment Click on the component to jump to the corresponding file",
+  "description": "A vite plug-in that clicks the page to jump to the corresponding component in the development environment",
   "main": "./lib/index.js",
   "type": "module",
   "module": "./lib/index.js",
@@ -16,7 +16,7 @@
   },
   "files": [],
   "keywords": [],
-  "author": "",
+  "author": "tubowen",
   "license": "ISC",
   "dependencies": {
     "@client-to-code/middleware": "workspace:*"

@@ -15,7 +15,7 @@
   },
   "files": [],
   "keywords": [],
-  "author": "Berwin",
+  "author": "tubowen",
   "license": "ISC",
   "dependencies": {
     "react-dev-utils": "^12.0.1"

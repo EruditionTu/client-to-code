@@ -1,5 +1,8 @@
 const {resolve} = require("path");
-var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
+// 分析插件
+// var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 
 module.exports={
     mode:"production",

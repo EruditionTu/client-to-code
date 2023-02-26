@@ -2,7 +2,10 @@
 /.idea/
 /packages/*/node_modules/
 /packages/*/lib/
+/packages/*/client
+/packages/*/plugin
+
 # babel插件
 /packages/babel-jsx-codeinfo-transformer/
-# webpack插件
+# webpack-react插件
 /packages/webpack-plugin/

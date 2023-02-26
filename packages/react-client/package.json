@@ -1,18 +1,30 @@
 {
-  "name": "@client-to-code/react-client",
+  "name": "@client-to-code/react-clent",
   "version": "1.0.0",
-  "description": "",
+  "description": "Components used to package files that need to click and jump under the react development environment.",
   "main": "./lib/dist/index.esm.js",
   "types": "./lib/types/index.d.ts",
   "scripts": {
     "build": "webpack&&tsc --emitDeclarationOnly",
-    "analyzer": "webpack --env.lang=cn",
+    "analyzer": "webpack",
     "dev": "webpack --watch&&tsc --emitDeclarationOnly -w"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "client-to-code",
+    "@client-to-code/react-client",
+    "dev-tools"
+  ],
   "author": "tubowen",
   "license": "ISC",
-  "files": [],
+  "files": [
+    "./lib",
+    "./packages.json",
+    "./README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "import": "./lib/dist/index.esm.js",

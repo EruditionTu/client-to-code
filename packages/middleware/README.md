@@ -1,2 +1,19 @@
-react-dev-utils：
-react-dev-utils是专门为CRA服务的工具库。像client-to-code这个插件的功能是点击UI跳转编辑器，就需要这个工具库的一些功能，react-dev-utils/errorOverlayMiddleware中就封装了一个express中间件，作用是 判断以launchEditorEndpoint开头的url就调用launchEditor中封装的方法，这个方法中将各个平台的各个编辑器做了适配
+# @client-to-code/middleware
+
+该软件包是用于client-to-code的一个中间件，作用是正确的解析链接中的query参数。
+
+## 在vite中的用法
+
+```
+import {queryParserMiddleware,launchEditorMiddleware} from 'client-to-code/middleware';
+
+export const clientToCodeServer = (): Plugin => ({
+  name: 'vite-plugin-react-client-to-code',
+  configureServer(server) {
+    server.middlewares.use(queryParserMiddleware)
+
+    server.middlewares.use(launchEditorMiddleware)
+  },
+})
+
+```

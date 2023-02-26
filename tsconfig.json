@@ -16,5 +16,9 @@
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
     },
-    "exclude": ["./packages/**/lib/","./packages/**/webpack.config.js"]
+    "exclude": [
+      "./packages/**/lib/",
+      "./packages/**/webpack.config.js",
+      "./packages/**/plugin/",
+      "./packages/**/client/"]
 }

@@ -6,6 +6,7 @@ const {resolve} = require("path");
 
 module.exports={
     mode:"production",
+    cache:true,
     entry:{
         "index.cjs":{
             import: resolve(__dirname,"src/index.ts"),

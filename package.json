@@ -7,15 +7,6 @@
     "dev": "pnpm run -r --filter=./packages/{middleware,vite-plugin,react-client} dev",
     "play:react-vite-demo": "pnpm run -r --filter=./packages/react-vite-demo dev"
   },
-  "exports": {
-    "./vite-plugin-react": "./packages/vite-plugin/lib/index.js",
-    "./vite-plugin-react/types": "./packages/vite-plugin/lib/index.d.ts",
-    "./react-client": {
-      "import": "./packages/react-client/lib/dist/index.esm.js",
-      "require": "./packages/react-client/lib/dist/index.cjs.js",
-      "types": "./packages/react-client/lib/types/index.d.ts"
-    }
-  },
   "workspaces": [
     "packages/*"
   ],

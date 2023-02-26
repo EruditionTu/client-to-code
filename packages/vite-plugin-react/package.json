@@ -1,0 +1,53 @@
+{
+  "name": "@client-to-code/vite-plugin-react",
+  "version": "1.0.0",
+  "description": "A vite plug-in that clicks the page to jump to the corresponding component in the development environment",
+  "main": "./plugin/index.js",
+  "module": "./client/index.js",
+  "types": "./client/index.d.ts",
+  "scripts": {
+    "build:esm": "tsc -p ./tsconfig.esm.json",
+    "build:cjs": "tsc -p ./tsconfig.cjs.json",
+    "build": "pnpm run build:esm&&pnpm run build:cjs",
+    "dev": "tsc -p ./tsconfig.esm.json -w && tsc -p ./tsconfig.json"
+  },
+  "exports": {
+    ".": {
+      "import":"./plugin/index.js",
+      "require": "./plugin/index.js",
+      "types": "./plugin/index.d.ts"
+    },
+    "./plugin":{
+      "import":"./plugin/index.js",
+      "require":"./plugin/index.js",
+      "types":"./plugin/index.d.ts"
+    },
+    "./client": {
+      "import": "./client/index.js",
+      "require":"./client/index.js",
+      "types": "./client/index.d.ts"
+    }
+  },
+  "files": [
+    "./README.md",
+    "./package.json",
+    "./client",
+    "./plugin"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "client-to-code",
+    "@client-to-code/react-client",
+    "@client-to-code/middleware",
+    "@client-to-code/vite-plugin-react",
+    "vite-plugin-react"
+  ],
+  "author": "tubowen",
+  "license": "ISC",
+  "dependencies": {
+    "@client-to-code/middleware": "^1.0.0",
+    "@client-to-code/react-client": "^1.0.0"
+  }
+}

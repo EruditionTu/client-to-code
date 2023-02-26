@@ -1,5 +1,5 @@
 {
-  "name": "@client-to-code/middleware",
+  "name": "@client-to-code/middlewae",
   "version": "1.0.0",
   "description": "Because the fetch does not specify Content-Type in the @ client-to-code/react-client package, this middleware can enable query to correctly parse parameters.",
   "type": "commonjs",
@@ -7,13 +7,20 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev":"tsc -w"
+    "dev": "tsc -w"
   },
   "exports": {
     ".": "./lib/index.js",
-    "./type":"./lib/index.d.ts"
+    "./type": "./lib/index.d.ts"
   },
-  "files": [],
+  "files": [
+    "./package.json",
+    "./README.md",
+    "./lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [],
   "author": "tubowen",
   "license": "ISC",
@@ -23,5 +30,8 @@
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/react-dev-utils": "^9.0.11"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
